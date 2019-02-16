@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/aws">AWS</a>
+      <a mat-list-item href="/dot-net">Dot Net</a>
+      <a mat-list-item href="/sql">SQL</a>
+      <a mat-list-item href="/agile-methodologies">Agile Methodologies</a>
+      <a mat-list-item href="/management">Management</a>
+      <a mat-list-item href="/business-owner">Business Owner</a>
+      <a mat-list-item href="/virtual-reality">Virtual Reality</a>
+      <a mat-list-item href="/other-links">Other Links</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="background-color:lightblue">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>The Great Cloud Migration</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
