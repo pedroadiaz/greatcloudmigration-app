@@ -1,4 +1,32 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="mat-app-background basic-container">
-  <app-side-nav></app-side-nav>
+<div class="main-div">
+  <nav mat-tab-nav-bar>
+    <section class="flexsection">
+      <div mat-tab-link class="tab" onclick="changeImage(0)"
+        [routerLink]="['aws']">
+        AWS
+    </div>
+    <div mat-tab-link class="tab" onclick="changeImage(1)"
+      [routerLink]="['sql']">
+        Database
+    </div>
+    <div mat-tab-link class="tab" onclick="changeImage(2)"
+      [routerLink]="['dot-net']">
+        .Net and Web
+    </div>
+    <div mat-tab-link class="tab" onclick="changeImage(3)"
+      [routerLink]="['management']">
+        Management
+    </div>
+    <div mat-tab-link class="tab" onclick="changeImage(4)"
+      [routerLink]="['agile-methodologies']">
+        Agile
+    </div>
+    <div mat-tab-link class="tab" onclick="changeImage(5)"
+      [routerLink]="['virtual-reality']">
+        Virtual Reality
+    </div>
+    </section>
+  </nav>
+  <router-outlet></router-outlet>
 </div>

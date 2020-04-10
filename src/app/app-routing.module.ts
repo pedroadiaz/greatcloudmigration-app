@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'agile-methodologies', component: AgileMethodologiesComponent },
   { path: 'business-owner', component: BusinessOwnerComponent},
   { path: 'dot-net', component: DotNetComponent },
+  { path: '', component: DotNetComponent },
   { path: 'management', component: ManagementComponent },
   { path: 'other-links', component: OtherLinksComponent },
   { path: 'sql', component: SqlComponent },

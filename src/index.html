@@ -10,7 +10,22 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url('assets/Sunset.jpg');">
   <app-root></app-root>
 </body>
+<script>
+  var images = [
+    "url('assets/ArizonaMountains.jpg')",
+    "url('assets/MachuPicchu.jpg')",
+    "url('assets/Sunset.jpg')",
+    "url('assets/MountainLake.jpg')",
+    "url('assets/CarpinteriaSunset.jpg')",
+    "url('assets/CarpinteriaSunset2.jpg')",
+  ];
+
+  function changeImage(something) {
+    document.body.style.backgroundImage = images[something];
+  }
+  
+</script>
 </html>

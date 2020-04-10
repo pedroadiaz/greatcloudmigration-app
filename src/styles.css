@@ -1,4 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: sans-serif, "Helvetica Neue", sans-serif; background-size: cover; }
+
+.main-div {
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    width: 60%;
+    color: white;
+    margin: auto;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+p {
+    width: 60%;
+    color: white;
+    margin: auto;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 20px;
+}
+
+.content-div {
+    margin-top: 100px;
+    text-align: left;
+    font-size: 1.1em;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.tab {
+    padding: 10px;
+    color: white;
+    border: skyblue;
+}
+
+.flexsection {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;  
+    justify-content: center;
+    margin-bottom: 10px;
+}
